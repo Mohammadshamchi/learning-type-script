@@ -1,6 +1,16 @@
-let activeDiscount : string[]
-activeDiscount = ['nowrouz','yalda']
+enum Color {
+    RED, 
+    BLUE,
+    GREEN,
+}
 
-for (const i of activeDiscount) {
-    console.log(i.toUpperCase())
+const product = {
+    title: 'test',
+    discount: ["yalda","Saleno"],
+    price: 100,
+    color: Color.BLUE,
+}
+
+if (product.color === Color.BLUE) {
+    console.log('We sold out blue color');
 }
