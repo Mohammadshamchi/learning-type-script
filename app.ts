@@ -1,9 +1,6 @@
-const product: {
-    title: string;
-    price: number;
-} = {
-    title: 'A Book',
-    price: 12.99
-}
+let activeDiscount : string[]
+activeDiscount = ['nowrouz','yalda']
 
-console.log(product.price)
+for (const i of activeDiscount) {
+    console.log(i.toUpperCase())
+}
