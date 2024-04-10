@@ -1,15 +1,13 @@
-var Color;
-(function (Color) {
-    Color[Color["RED"] = 0] = "RED";
-    Color[Color["BLUE"] = 1] = "BLUE";
-    Color[Color["GREEN"] = 2] = "GREEN";
-})(Color || (Color = {}));
-var product = {
-    title: 'test',
-    discount: ["yalda", "Saleno"],
-    price: 100,
-    color: Color.BLUE,
-};
-if (product.color === Color.BLUE) {
-    console.log('We sold out blue color');
+function add(input1, input2) {
+    var result;
+    if (typeof input1 === 'number' && typeof input2 === 'number') {
+        result = input1 + input2;
+        return result;
+    }
+    else {
+        result = input1.toString() + input2.toString();
+        return result;
+    }
 }
+console.log(add(5, 3));
+console.log(add("Book1", "Book2"));
