@@ -1,16 +1,5 @@
-enum Color {
-    RED, 
-    BLUE,
-    GREEN,
-}
+let products: any 
+products = ['Apple', 1, 2]
 
-const product = {
-    title: 'test',
-    discount: ["yalda","Saleno"],
-    price: 100,
-    color: Color.BLUE,
-}
-
-if (product.color === Color.BLUE) {
-    console.log('We sold out blue color');
-}
+let products2: any[]
+products2=['apple','new']
